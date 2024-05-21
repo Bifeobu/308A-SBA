@@ -1,6 +1,10 @@
 /////////////using fetch for external data///////////////
 const searchInput = document.querySelector("[data-search]");
 
+searchInput.addEventListener("input", e => {
+    const value = e.target.value
+    console.log(value)
+})
 
 fetch("https://jsonplaceholder.typicode.com/albums")
     .then(response => {
