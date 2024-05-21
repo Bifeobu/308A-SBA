@@ -10,18 +10,22 @@
 //         console.log(error)
 //     });
 
-async function fetchAlbums(){
-    try{
-        const response = await fecth("https://jsonplaceholder.typicode.com/albums")
+// fetchAlbums();
 
-        if(!response.ok){
-            throw new Error("Data does not exist");
-        }
+// async function fetchAlbums(){
+//     try{
+//         const response = await fecth("https://jsonplaceholder.typicode.com/albums")
 
-        const data = await response.json();
-        console.log(data);
-    }
-    catch(error){
-        console.log(error);
-    }
-}
+//         if(!response.ok){
+//             throw new Error("Data does not exist");
+//         }
+
+//         const data = await response.json();
+//         console.log(data);
+//     }
+//     catch(error){
+//         console.error(error);
+//     }
+// };
+
+
