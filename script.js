@@ -31,3 +31,10 @@
 // };
 
 /////////////////using async and await (2nd)///////////////
+async function fetchAlbums() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/albums");
+    const data = await response.json();
+    console.log(data);
+}
+
+fetchAlbums();
