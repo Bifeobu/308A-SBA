@@ -14,17 +14,18 @@ searchInput.addEventListener("input", e => {
 });
 
 const newAlbum = {
-    id: "101",
+    userID: "1",
     title: "Sunshine"
 };
 
-fetch("https://jsonplaceholder.typicode.com/albums", {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(newAlbum)
-})
+fetch("https://jsonplaceholder.typicode.com/albums")
+// {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(newAlbum)
+// })
     .then(response => {
         return response.json();
     })
