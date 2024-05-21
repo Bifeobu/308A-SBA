@@ -1,3 +1,4 @@
+/////////////using fetch for external data///////////////
 // fetch("https://jsonplaceholder.typicode.com/albums")
 //     .then(response => {
 //         return response.json();
@@ -10,6 +11,7 @@
 //         console.log(error)
 //     });
 
+/////////////////using async and await (1st)///////////////
 // fetchAlbums();
 
 // async function fetchAlbums(){
@@ -28,4 +30,4 @@
 //     }
 // };
 
-
+/////////////////using async and await (2nd)///////////////
