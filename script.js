@@ -11,9 +11,20 @@ searchInput.addEventListener("input", e => {
       user.email.toLowerCase().includes(value)
     user.element.classList.toggle("hide", !isVisible)
   })
-})
+});
 
-fetch("https://jsonplaceholder.typicode.com/albums")
+const newAlbum = {
+    id: "101",
+    title: "Sunshine"
+};
+
+fetch("https://jsonplaceholder.typicode.com/albums", {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newAlbum)
+})
     .then(response => {
         return response.json();
     })
@@ -25,7 +36,7 @@ fetch("https://jsonplaceholder.typicode.com/albums")
         console.log(error)
     });
 
-/////////////////using async and await (1st)///////////////
+///////////////using async and await (1st)fail///////////
 // fetchAlbums();
 
 // async function fetchAlbums(){
