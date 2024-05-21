@@ -38,3 +38,7 @@ async function fetchAlbums() {
 }
 
 fetchAlbums();
+
+function albumTitles() {
+    const albumName =
+}
