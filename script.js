@@ -1,4 +1,4 @@
-fetch("https://jsonplaceholder.typicode.com/photos")
+fetch("https://jsonplaceholder.typicode.com/albums")
     .then(response => {
         return response.json();
     })
